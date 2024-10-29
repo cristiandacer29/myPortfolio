@@ -1,0 +1,518 @@
+.col-1 {width: 8.33%; box-sizing: border-box; margin: 0.5rem; padding: 0.5rem;}
+.col-2 {width: 16.66%; box-sizing: border-box; margin: 0.5rem; padding: 0.5rem;}
+.col-3 {width: 25%; box-sizing: border-box; margin: 0.5rem; padding: 0.5rem;}
+.col-4 {width: 33.33%; box-sizing: border-box; margin: 0.5rem; padding: 0.5rem;}
+.col-5 {width: 41.66%; box-sizing: border-box; margin: 0.5rem; padding: 0.5rem;}
+.col-6 {width: 50%; box-sizing: border-box; margin: 0.5rem; padding: 0.5rem;}
+.col-7 {width: 58.33%; box-sizing: border-box; margin: 0.5rem; padding: 0.5rem;}
+.col-8 {width: 66.66%; box-sizing: border-box; margin: 0.5rem; padding: 0.5rem;}
+.col-9 {width: 75%; box-sizing: border-box; margin: 0.5rem; padding: 0.5rem;}
+.col-10 {width: 83.33%; box-sizing: border-box; margin: 0.5rem; padding: 0.5rem;}
+.col-11 {width: 91.66%; box-sizing: border-box; margin: 0.5rem; padding: 0.5rem;}
+.col-12 {width: 100%; box-sizing: border-box;}
+/*outline*/
+div
+{
+    border: 1px solid black;
+}
+body
+{
+    color: rgb(238, 238, 255);
+    margin: 0;
+    padding: 0;
+    background-image: url("img/background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    font-family: Arial, sans-serif;
+}
+/* head section------------------------------------------------------ */
+.head
+{
+    position: relative;
+    width: 100%;
+    top: 0;
+    height: 40px;
+}
+.logo-size
+{
+    height: 40px;
+    float: left;
+    filter: drop-shadow(0 0 0.04em rgb(238, 238, 255));
+}
+.nav
+{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    float: right;
+    
+
+}  
+li
+{
+    display: inline-block;
+    text-decoration: none;
+    list-style-type: none;
+    height: 100%;
+    margin-left: -0.3em;
+    
+}
+a
+{
+    text-decoration: none;
+    color: rgb(238, 238, 255);
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    display: inline-block;
+    align-content: center;
+    height: 100%;
+    transition: padding-left 0.1s;
+    transition: padding-right 0.1s;
+}
+.link-hover:hover
+{
+    color: rgb(238, 238, 255);
+}
+.nav-hover:hover
+{
+    background-color: rgb(10, 47, 110);
+    text-shadow: 2px 2px 4px #000000; 
+    padding: 0 0.7rem;;
+}
+header .container
+{
+    height: 40px;
+}
+/* footer section------------------------------------------------------ */
+.foot
+{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    text-align: left;
+}
+
+footer .container
+{
+    height: 50px;
+}
+.head-foot-bg
+{
+    background-color: rgba(0, 0, 0, 0.134);
+    backdrop-filter: blur(2px);
+}
+.active
+{
+    background-color: rgb(14, 59, 137);
+    text-shadow: 2px 2px 4px #000000;
+}
+.foot a
+{
+    color:rgb(180, 179, 232);
+    text-decoration: underline;
+}
+
+/* content------------------------------------------------------ */
+.home-screen-hight
+{
+    height: 100vh;
+}
+.portfolio-screen-hight
+{
+    height: 100%;
+}
+.container
+{
+    margin: 0px auto;
+    align-content: center;
+    padding: 0px;
+}
+/* index page------------------------------------------------------ */
+.profile-size
+{
+    max-height: 250px;
+    border-radius: 50%;
+    float: left;
+    animation-name: animation-profile-photo;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+}
+.index-text-animation
+{
+    animation-name: animation-index-text;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+}
+.white-line
+{
+    background-color: rgb(238, 238, 255);
+    margin: auto 5px;
+    width: 3px;
+    height: 250px;
+    float: left;   
+    align-self: center; 
+}
+p
+{
+    font-family: Arial, serif;
+}
+.double-size
+{
+    font-size: 3em;
+}
+
+/* portfolio page------------------------------------------------------ */
+.text-center
+{
+    text-align: center;   
+}
+.font-design
+{
+    font-size: 5vw;
+    color: rgba(238, 238, 255, 0);
+    -webkit-text-stroke: 0.02em rgb(238, 238, 255);
+    animation-name: text-animation;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-in-out;
+}
+html
+{
+    scroll-snap-type: y mandatory;
+}
+.scroll-content
+{
+    scroll-snap-align: start;
+}
+.carousel-img
+{   
+    height: 70%;
+    padding: 0.5rem;
+    align-content: center;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.jersey-name
+{
+    margin-top: 0.1rem;
+    font-size: 2vw;
+}
+.image-fit
+{
+    box-sizing: border-box;
+    height: 90%;
+    width: 100%;
+    object-fit: contain;
+}
+.carousel-list
+{
+    height: 30%;
+    align-content: center;
+    padding: 0;
+    overflow-x:scroll;
+}
+.long-width
+{
+    box-sizing: border-box;
+    width: 141vw;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+}
+
+.image-list
+{
+    box-sizing: border-box; 
+    padding: 0.5rem;
+    width: 20vw;
+    float: left;
+}
+.image-bg
+{
+    filter: drop-shadow(0 0 1rem rgba(0, 255, 30, 0.307));
+}
+.image-size:hover
+{
+    filter: drop-shadow(0 0 0.1em rgb(238, 238, 255));
+}
+.image-size
+{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.container-grid
+{
+    display: grid;
+    grid-template-rows: 10% 45% 45%;
+    grid-template-columns: 2fr 2fr 2fr;
+    align-items: center;
+    justify-items: center;
+    background-color: rgba(15, 2, 57, 0.2);
+    box-shadow:0rem 0.3rem 0.5rem black;
+    height: 90%;
+    border-radius: 1rem;
+}
+.illustrator-photo
+{
+    box-sizing: border-box;
+    object-fit:contain;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    filter: drop-shadow(0 0 0.2rem rgb(238, 238, 255));
+}
+.illustrator-photo:hover
+{
+    transform: scale(1.02, 1.02);
+}
+.grid-head
+{
+    grid-column: span 3;
+    color: rgba(238, 238, 255, 0);
+    -webkit-text-stroke: 0.01em rgb(238, 238, 255);
+    font-size: 3vw;
+    
+}
+.grid-content2
+{
+    grid-row-start: 3;
+}
+.grid-content3
+{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+.img-full-screen
+{
+    position: fixed;
+    top: 0px;
+    height: 100vh;
+    background-color: rgba(53, 72, 105, 0.887);
+    z-index: 2;
+}
+.close-btn
+{
+    color: rgb(255, 255, 255);
+    position: relative;
+    top: 0px;
+    height: 2rem;
+    width: 2rem;
+    float: right;
+    align-content: center;
+    box-sizing: border-box;
+    background-color: rgb(230, 57, 60);
+    margin: 0.5rem;
+    font-weight: bold;
+    border-color: rgb (14, 59, 137);
+}
+.close-btn:hover
+{
+    background-color: rgb(255, 109, 112);
+}
+.full-screen-image
+{
+    margin: 0px auto;
+    text-align: center;
+    height: 100%;
+    
+}
+.image-center
+{
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+    filter: drop-shadow(0.2rem 0.2rem 0.5rem rgb(0, 0, 0));
+}
+
+/* contact page------------------------------------------------------ */
+.contact-icon-size
+{
+    height: 2rem;
+}
+.contact-text-center
+{
+    align-content: center;
+}
+.inline
+{
+    display: flex;
+    box-sizing: border-box;
+}
+input
+{
+    width: 100%;
+    box-sizing: border-box;
+    color: rgb(56, 53, 91);
+    font-size: 1rem;
+    font-family: Arial, sans-serif;
+}
+textarea
+{
+    box-sizing: border-box;
+    width: 100% !important;
+    height: 30vh !important;
+    color: rgb(56, 53, 91);
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    
+}
+.message-border
+{
+    border-radius: 1%;
+    padding: 0.5em 1%;
+    margin: 0.5em 1%;
+    font-family: Arial, sans-serif;
+    border-color: rgb(56, 53, 91);
+}
+form
+{
+    padding: 2%;
+}
+.submit
+{
+    float: right;
+    padding: .2em;
+    width: 50%;
+    background-color: rgb(14, 59, 137);
+    border-color: rgb(26, 106, 124);
+    color: rgb(255, 255, 255);
+    border-radius: 0.5em;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+input:hover
+{
+    border-color: rgb(26, 106, 124);
+}
+textarea:hover
+{
+    border-color: rgb(26, 106, 124);
+}
+.submit:hover
+{
+    background-color: rgb(21, 78, 176);
+}
+.bottom-margin
+{
+    margin-bottom: 1em;
+}
+.glass-effect
+{
+    background: rgba(150, 150, 150, 0.15);
+    border-radius: 0.5rem;
+    backdrop-filter: blur 4px;
+    border: solid 1px rgba(166, 166, 166, 0.25);
+}
+
+
+/* animation------------------------------------------------------ */
+@keyframes text-animation
+{
+    0%
+    {
+        opacity: 0;
+        transform: translateY(0.3em);
+    }
+    100%
+    {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes animation-profile-photo
+{
+    0%
+    {
+        opacity: 0;
+        transform: translateX(1em);
+    }
+    100%
+    {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes animation-index-text
+{
+    0%
+    {
+        opacity: 0;
+        transform: translateX(-1em);
+    }
+    100%
+    {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* mobile screen------------------------------------------------------ */
+@media screen and (max-width: 768px)
+{
+    .col-9
+    {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 0.5rem;
+    }
+
+}
+@media screen and (max-width: 951px)
+{
+    .profile-size
+    {
+        object-fit: cover;
+        max-height: 60%;
+        width: 60%;
+        border-radius: 50%;
+        margin: auto 20%;
+        
+    }
+    .white-line
+    {
+        display: none;
+    }
+    .double-size
+    {
+        font-size: 3em;
+        text-align: center;
+    }
+    .for-mobile-padding
+    {
+        width: 90%;
+        margin: 4% 5%;
+        text-indent: 4%;
+    }
+}
+@media screen and (max-width: 677px)
+{
+    .col-10
+    {
+        box-sizing: border-box;
+        width: 100%;
+    }
+    .link-small
+    {
+        font-size: 0.8rem;
+        display: inline;
+    }
+    .foot
+    {
+        font-size: 0.8rem;
+    }
+
+}
+
+@media screen and (max-width: 453px)
+{
+    .foot
+    {
+        font-size: 0.7rem;
+    }
+}
